@@ -8,5 +8,5 @@ def home(request):
         context = {"sample":request.user}
     else:
         context = {"sample": request.user}
-    template = 'base.html'
+    template = 'products/home.html'
     return render(request, template, context)
