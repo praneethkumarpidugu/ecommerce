@@ -1,3 +1,6 @@
 virtualenv
 Django==1.6.5
-pytz
+South==1.0.2
+argparse==1.2.1
+pytz==2015.4
+wsgiref==0.1.2
