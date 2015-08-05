@@ -4,12 +4,9 @@ from .models import Product
 # Create your views here.
 
 def home(request):
-    if request.user.is_authenticated():
-        #sample = "Praneeth Kumar Pidugu"
-        context = {"sample":request.user}
-    else:
-        context = {"sample": request.user}
+    products = Product.objects.all()
     template = 'products/home.html'
+    context = {"products": products}
     return render(request, template, context)
 
 def all(request):
