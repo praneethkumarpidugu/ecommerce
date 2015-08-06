@@ -26,3 +26,19 @@ def single(request, slug):
         return render(request, template, context)
     except:
         raise Http404
+
+def search(request):
+    try:
+        q = request.GET.get('q')
+    except:
+        q = None
+
+    if q:
+        products = Product.objects.filter(title_icontains=q)
+        context = {'query': q, 'products': products}
+        template = 'products/results.html'
+    else:
+        template = 'products/home.html'
+        result = "no results found"
+        context = {'result': result}
+    return render(request, template, context)
