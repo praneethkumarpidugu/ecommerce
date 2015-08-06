@@ -12,7 +12,7 @@ class Product(models.Model):
     active = models.BooleanField(default=True)
 
     def __unicode__(self):
-        return "This is the Title"
+        return self.title
 
     class Meta:
         unique_together = ('title', 'slug')
