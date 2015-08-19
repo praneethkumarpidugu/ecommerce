@@ -6,43 +6,60 @@
 
 {% block content %}
 
-
 <div class="row">
     <div class="col-sm-4">
-{% for img in images %}
-    {% if img.featured %}
+        {% for img in images %}
+        {% if img.featured %}
         <div class="col-xs-12">
             <img class='img-responsive' src="{{ MEDIA_URL }}{{ img.image }}"/>
             <hr/>
         </div>
-    {% endif %}
-{% endfor %}
+        {% endif %}
+        {% endfor %}
 
-{% for img in images %}
-    {% if not img.featured %}
+        {% for img in images %}
+        {% if not img.featured %}
         <div class="col-xs-6">
             <a href="#" class="thumbnail"><img class='img-responsive' src="{{ MEDIA_URL }}{{ img.image }}"/></a>
         </div>
-    {% endif %}
-{% endfor %}
-     </div>
-    <div class="col-sm-8">
-        <h1>{{ product.title }}<a href="{% url 'update_cart' product.slug %}?qty=12" class="pull-right">Add to cart</a> </h1>
-        <form class="form pull-right" method="GET" action="{% url 'update_cart' product.slug %}">
-            <input name="qty" type="number" value="1"/>
-            <input name="attr" type="text" placeholder="color"/>
-            <input type="submit" value="Add to cart" />
-
-        </form>
-        <hr/>
-        price : {{ product.price }}
-        <br/>
-        Course one-one training with $30 purchase
-        <hr/>
-
-        {{ product.description|linebreaks }}
-
+        {% endif %}
+        {% endfor %}
     </div>
-</div>
+    <div class="col-sm-8">
+        <div class="col-sm-8 pull-left">
+            <h1>{{ product.title }}
+                <!--<a href="{% url 'update_cart' product.slug %}?qty=12" class="pull-right">Add to cart</a>-->
+            </h1>
+        </div>
+            <div class="col-sm-4 pull-right">
+            <form class="form pull-right" method="GET" action="{% url 'update_cart' product.slug %}">
+                <input class="btn btn-default btn-block" type="submit" value="Add to cart"/>
+                <input class="form-control" name="qty" type="number" value="1"/>
+                <select class="form-control" name="color">
+                    <option value="red">Red</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="blue">Blue</option>
+                </select>
+                <select class="form-control" name="size">
+                    <option value="sm">SM</option>
+                    <option value="md">MD</option>
+                    <option value="lg">LG</option>
+                </select>
 
-{% endblock %}
+            </form>
+            </div>
+            <div class="col-sm-12">
+            <hr/>
+            price : {{ product.price }}
+            <br/>
+            Course one-one training with $30 purchase
+            <hr/>
+            </div>
+            <div class="col-sm-12">
+            {{ product.description|linebreaks }}
+            </div>
+
+        </div>
+    </div>
+    {% endblock %}
+</div>
