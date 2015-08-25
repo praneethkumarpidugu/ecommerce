@@ -26,7 +26,7 @@
                 <td>{{ item.product.price }}</td>
                 <td>{{ item.quantity }}</td>
                 <!--<td>{{ item.variations.all }}</td>-->
-                <td><a href="#">Remove</a></td>
+                <td><a href="{% url 'remove_from_cart' item.id  %}">Remove</a></td>
             </tr>
 
             {% endfor %}

@@ -12,6 +12,7 @@ urlpatterns = patterns('',
     url(r'^products/$', 'products.views.all', name='products'),
     url(r'^products/(?P<slug>[\w-]+)/$', 'products.views.single', name='single_product'),
     url(r'^cart/$', 'carts.views.view', name='cart'),
+    url(r'^cart/(?P<id>\d+)/$', 'carts.views.remove_from_cart', name='remove_from_cart'),
     url(r'^cart/(?P<slug>[\w-]+)/$', 'carts.views.add_to_cart', name='add_to_cart'),
     # url(r'^blog/', include('blog.urls')),
     #(?P<all_items>.*)
