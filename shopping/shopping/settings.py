@@ -40,6 +40,7 @@ INSTALLED_APPS = (
     'gunicorn',
     'products',
     'carts',
+    'orders',
 )
 
 MIDDLEWARE_CLASSES = (
