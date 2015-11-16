@@ -26,7 +26,7 @@ def checkout(request):
     if created:
         #assign a user to the order
         #assign address
-        new_order.order_id = str(time.time())
+        new_order.order_id = id_generator() #str(time.time())
         new_order.save()
     new_order.user = request.user
     new_order.save()
