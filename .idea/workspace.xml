@@ -72,11 +72,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/shopping/orders/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="846">
-                  <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+                <state vertical-scroll-proportion="0.4347826" vertical-offset="0" max-vertical-offset="954">
+                  <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
                   <folding>
                     <element signature="e#0#11#0" expanded="true" />
                   </folding>
@@ -94,10 +94,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="utils.py" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="utils.py" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/shopping/orders/utils.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.3478261" vertical-offset="0" max-vertical-offset="621">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="324">
                   <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
                   <folding>
                     <element signature="e#0#13#0" expanded="true" />
@@ -161,8 +161,8 @@
         <option value="$PROJECT_DIR$/shopping/shopping/urls.py" />
         <option value="$PROJECT_DIR$/shopping/templates/orders/user.html" />
         <option value="$PROJECT_DIR$/shopping/carts/views.py" />
-        <option value="$PROJECT_DIR$/shopping/orders/views.py" />
         <option value="$PROJECT_DIR$/shopping/orders/utils.py" />
+        <option value="$PROJECT_DIR$/shopping/orders/views.py" />
       </list>
     </option>
   </component>
@@ -943,22 +943,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shopping/orders/views.py">
+    <entry file="file://$PROJECT_DIR$/shopping/orders/utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="846">
-          <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="324">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shopping/orders/utils.py">
+    <entry file="file://$PROJECT_DIR$/shopping/orders/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3478261" vertical-offset="0" max-vertical-offset="621">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.4347826" vertical-offset="0" max-vertical-offset="954">
+          <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
