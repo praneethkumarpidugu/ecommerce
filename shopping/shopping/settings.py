@@ -17,7 +17,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '65vhoq=e6f$-@cur7#ru3g(b3y__ubjpdpf!x-i24+9&d)!(ea'
+SECRET_KEY = 'YOUR_PRODUCTION_SECRET_KEY'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -41,6 +41,7 @@ INSTALLED_APPS = (
     'products',
     'carts',
     'orders',
+    'accounts',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -108,3 +109,6 @@ STATICFILES_DIRS = (
 TEMPLATE_DIRS = (
     os.path.join(BASE_DIR, 'templates'),
 )
+
+STRIPE_SECRET_KEY = "YOUR_SECRET_KEY"
+STRIPE_PUBLISHABLE_KEY = "YOUR_PUBLISHABLE_KEY"
